@@ -4,14 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="calcula.js"></script>
+    
+    
     <title>Taller Practico 2</title>
 </head>
 <body>
-    <div>
-        <form action="">
-            <input type="text">
-        </form>
-    </div>
+
+    <h1><center>Restaurante los pollos hermanos</center></h1>
+    <center><img src="img/image.png"></center>
+    <form name="sumar">
+<div class="caja">
+    <label>Cantidad de combos</label>
+    <input type="text" name="cantidad" placeholder="Cantidad" onKeyUp="operacion()">
+    <br>
+    
+    <label>Elegir combo</label>
+    <select name="costo" onchange="operacion()">
+     <option value="7.50">Super Combo</option>
+      <option value="5.75">Combo Personal</option>
+      <option value="3.50">Combo Infantil</option>
+    </select>
+  
+</div>
+<div class="caja">
+    <h3>Acompañamientos</h3>
+    <input name="Check1" type="checkbox" id="Check1" value="checkbox" onChange="Sumar()" >
+    <input name="Check2" type="checkbox" id="Check2" value="checkbox" onChange="Sumar()"><br>
+    <label>Valor agregado</label>
+    <input name="valorAgregado" type="text" id="valorAgregado">
+    <script type="text/javascript">
+
+</script>
+    
+      <label>Ensalada</label>
+      <input type="checkbox" value="1.50" name="adicion" onchange="operacion()"><br>
+      <label>Papa Frita</label>
+      <input type="checkbox"><br>
+      <label>Pieza de pollo grande</label>
+      <input type="checkbox"><br>
+      <label>Pieza de pollo mediana</label>
+      <input type="checkbox"><br>
+      <label>Pieza de pollo pequeño</label>
+      <input type="checkbox"><br>
+      <label>Bebida Grande</label>
+      <input type="checkbox"><br>
+      <label>Bebida mediana</label>
+      <input type="checkbox"><br>
+      <label>Bebida pequeña</label>
+      <input type="checkbox"><br>
+      <label>Café</label>
+      <input type="checkbox"><br>
+      <label>Postre</label>
+      <input type="checkbox"><br>
+    
+     
+</div>
+<div>
+    <label>SALDO</label>
+    <input type="text" name="saldo_pagar">
+    <br>
+    <label>TOTAL</label>
+    <input type="text" name="total">
+</div>
+  
+</form>
+
+<form action="" target="_blank">
+
+        <p>Aquí puedes dejar comentarios para el restaurante:</p>
+      
+        <p><textarea name="comentarios" cols="40" rows="5"></textarea></p>
+      
+        <p><input type="submit" value="Enviar"></p>
+      
+      </form>
+
     
 </body>
+
 </html>
